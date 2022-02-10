@@ -20,9 +20,9 @@ export class CreateStatementController {
 
     const statement = await createStatement.execute({
       user_id,
-      type,
+      description,
       amount,
-      description
+      type,
     });
 
     return response.status(201).json(statement);
